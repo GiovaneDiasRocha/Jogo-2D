@@ -60,6 +60,15 @@ public class Player : MonoBehaviour
             isJumping = false;
             anim.SetBool("jump", false);
         }
+
+        if(colisor.gameObject.tag == "Spike") {
+            Controller.instance.ShowGameOver(); //Quando cair no espinho, chama o metodo game over
+            Destroy(gameObject); //Desruir o gameObject Player quando cair no espinho
+        }
+
+        if(colisor.gameObject.tag == "NextLevel") {
+            Controller.instance.ShowContinue();
+        }
     }
 
     void OnCollisionExit2D(Collision2D colisor) {
