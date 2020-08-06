@@ -37,10 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Apple.cs" />
+     <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\Controller.cs" />
+     <Compile Include="Assets\Scripts\Enimy.cs" />
      <Compile Include="Assets\Scripts\FallenPlatform.cs" />
      <Compile Include="Assets\Scripts\NextLevelPoint.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Saw.cs" />
      <Compile Include="Assets\Scripts\Trampoline.cs" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="UnityEngine">

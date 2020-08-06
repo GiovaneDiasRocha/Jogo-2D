@@ -12,6 +12,7 @@ public class Controller : MonoBehaviour
     public static Controller instance;
     public GameObject gameOver;
     public GameObject continueOrRestart;
+    public GameObject start;
     void Start()
     {
         instance = this; //Atribui o script na variável instance, para ser acessado de outro script através do método static
@@ -35,6 +36,10 @@ public class Controller : MonoBehaviour
 
     public void ContinueGame(string nextLvl) {
         SceneManager.LoadScene(nextLvl);
+    }
+
+    public void StartGame(string lvl) {
+        SceneManager.LoadScene(lvl);
     }
 
 }
